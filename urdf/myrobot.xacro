@@ -109,15 +109,15 @@
   </collision>
 </link>
 
-<joint name="l1_bl" type="revolute">
+<joint name="m1" type="revolute">
   <origin xyz="0.0 0.0 0.0312" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="link_1_1"/>
-  <axis xyz="0.0 0.0 -1.0"/>
-  <limit upper="5.585054" lower="0.0" effort="100" velocity="100"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="l2_l1" type="revolute">
+<joint name="m2" type="revolute">
   <origin xyz="0.0 0.002 0.187" rpy="0 0 0"/>
   <parent link="link_1_1"/>
   <child link="link_2_1"/>
@@ -125,7 +125,7 @@
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="l3_l2" type="revolute">
+<joint name="m3" type="revolute">
   <origin xyz="0.0 0.05863 0.15" rpy="0 0 0"/>
   <parent link="link_2_1"/>
   <child link="link_3_1"/>
@@ -133,7 +133,7 @@
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="l4_l3" type="revolute">
+<joint name="m4" type="revolute">
   <origin xyz="-0.0 0.02145 0.12" rpy="0 0 0"/>
   <parent link="link_3_1"/>
   <child link="link_4_1"/>
