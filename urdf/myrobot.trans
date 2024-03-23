@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="myrobot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="l1_bl_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="l1_bl">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="l1_bl_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="l2_l1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="l2_l1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="l2_l1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="l3_l2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="l3_l2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="l3_l2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="l4_l3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="l4_l3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="l4_l3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
