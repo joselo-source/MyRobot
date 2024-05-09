@@ -6,9 +6,9 @@
 <xacro:include filename="$(find myrobot_description)/urdf/myrobot.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="-2.392851857687137e-05 -5.300803319461504e-09 0.00763304236283115" rpy="0 0 0"/>
-    <mass value="2.933546779210685"/>
-    <inertia ixx="0.004747" iyy="0.004749" izz="0.00893" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="-2.412129279155798e-05 -6.726389239787194e-09 -0.01650625609341484" rpy="0 0 0"/>
+    <mass value="2.9089077355455877"/>
+    <inertia ixx="0.004719" iyy="0.004722" izz="0.00889" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -25,119 +25,148 @@
   </collision>
 </link>
 
-<link name="link_1_1">
+<link name="link2_1">
   <inertial>
-    <origin xyz="-4.151294663686638e-07 -0.009279808040763556 0.10204796066778993" rpy="0 0 0"/>
-    <mass value="0.9302052276738703"/>
-    <inertia ixx="0.006061" iyy="0.006125" izz="0.000787" ixy="-0.0" iyz="0.00042" ixz="-0.0"/>
+    <origin xyz="2.1665809255954847e-05 -0.009091892046350344 0.10476261914902277" rpy="0 0 0"/>
+    <mass value="0.9607225556465793"/>
+    <inertia ixx="0.006282" iyy="0.006348" izz="0.000789" ixy="-0.0" iyz="0.000405" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 -0.0 -0.0312" rpy="0 0 0"/>
+    <origin xyz="-0.0 -0.0 -0.0072" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 -0.0 -0.0312" rpy="0 0 0"/>
+    <origin xyz="-0.0 -0.0 -0.0072" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="link_2_1">
+<link name="link3_1">
   <inertial>
-    <origin xyz="0.00036780303540046125 0.03076727172249008 0.012540618975346363" rpy="0 0 0"/>
-    <mass value="1.6352826545494268"/>
-    <inertia ixx="0.01147" iyy="0.011884" izz="0.001574" ixy="7e-06" iyz="-9.2e-05" ixz="-2.2e-05"/>
+    <origin xyz="8.733976267216827e-06 0.024722520040826534 0.03608326973678133" rpy="0 0 0"/>
+    <mass value="0.5477305594664718"/>
+    <inertia ixx="0.001904" iyy="0.001989" izz="0.000344" ixy="-0.0" iyz="-0.00027" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 -0.002 -0.2182" rpy="0 0 0"/>
+    <origin xyz="-0.0 -0.002 -0.1942" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 -0.002 -0.2182" rpy="0 0 0"/>
+    <origin xyz="-0.0 -0.002 -0.1942" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="link_3_1">
+<link name="link4_1">
   <inertial>
-    <origin xyz="1.7277946714556383e-06 0.011962598890476739 0.04120294009153791" rpy="0 0 0"/>
-    <mass value="0.43344163926540746"/>
-    <inertia ixx="0.001762" iyy="0.001844" izz="0.000118" ixy="-0.0" iyz="-4.8e-05" ixz="-0.0"/>
+    <origin xyz="1.7256094695911437e-05 0.017473863459912448 0.03288161968867287" rpy="0 0 0"/>
+    <mass value="0.3354355047520062"/>
+    <inertia ixx="0.000813" iyy="0.000817" izz="0.000138" ixy="1e-06" iyz="5e-06" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 -0.06063 -0.3682" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.048471 -0.3242" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 -0.06063 -0.3682" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.048471 -0.3242" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="link_4_1">
+<link name="link5_1">
   <inertial>
-    <origin xyz="-4.592120418693256e-08 0.003013178400541147 0.046242828124350266" rpy="0 0 0"/>
-    <mass value="0.30089103090381814"/>
-    <inertia ixx="0.000298" iyy="0.000291" izz="6.2e-05" ixy="0.0" iyz="3.3e-05" ixz="-0.0"/>
+    <origin xyz="2.1629335735621904e-06 0.0021779469306734273 0.038801511461503846" rpy="0 0 0"/>
+    <mass value="0.3513810710721947"/>
+    <inertia ixx="0.000434" iyy="0.000426" izz="7.1e-05" ixy="0.0" iyz="3.3e-05" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.0 -0.08208 -0.4882" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.072373 -0.4342" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 -0.08208 -0.4882" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.072373 -0.4342" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find myrobot_description)/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find myrobot_description)/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wrist_1">
+  <inertial>
+    <origin xyz="-0.0001877346062586614 -2.1492034539549731e-07 0.005000000009597216" rpy="0 0 0"/>
+    <mass value="0.019539229936272853"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.078973 -0.5172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find myrobot_description)/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.078973 -0.5172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find myrobot_description)/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <joint name="m1" type="revolute">
-  <origin xyz="0.0 0.0 0.0312" rpy="0 0 0"/>
+  <origin xyz="0.0 0.0 0.0072" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="link_1_1"/>
-  <axis xyz="0.0 0.0 1.0"/>
+  <child link="link2_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="m2" type="revolute">
   <origin xyz="0.0 0.002 0.187" rpy="0 0 0"/>
-  <parent link="link_1_1"/>
-  <child link="link_2_1"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
   <axis xyz="0.0 1.0 0.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="m3" type="revolute">
-  <origin xyz="0.0 0.05863 0.15" rpy="0 0 0"/>
-  <parent link="link_2_1"/>
-  <child link="link_3_1"/>
+  <origin xyz="-0.0 0.046471 0.13" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
   <axis xyz="0.0 1.0 -0.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="m4" type="revolute">
-  <origin xyz="-0.0 0.02145 0.12" rpy="0 0 0"/>
-  <parent link="link_3_1"/>
-  <child link="link_4_1"/>
-  <axis xyz="0.0 1.0 -0.0"/>
+  <origin xyz="0.0 0.023902 0.11" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit upper="2.094395" lower="-2.094395" effort="100" velocity="100"/>
+</joint>
+
+<joint name="m5" type="revolute">
+  <origin xyz="0.0 0.0066 0.083" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="wrist_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
